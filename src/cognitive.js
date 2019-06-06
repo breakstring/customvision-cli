@@ -240,8 +240,9 @@ class Cognitive {
                     var _extname = path.extname(_imagename).toLowerCase();
                     if (_imagestat.isFile() && this._ImageFileExt.indexOf(_extname) >= 0) {
                         await this._Client.createImagesFromData(_projectid, fs.readFileSync(_imagefullname), { "tagIds": [_tag.id] });
-                        cli.progress(_fileFlag / _fileCount);
                     }
+                    cli.progress(_fileFlag / _fileCount);
+
                 }
             }
         }
