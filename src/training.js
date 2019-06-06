@@ -15,16 +15,13 @@ async function AsyncFunctionWrap() {
         let _answer = await inquirer.prompt({
             name: "confirm2cleanup",
             type: "confirm",
-            message: "Reupload image files?",
+            message: "Reupload image files(Y will DELETE all the tags and images from your server workspace, but not affact your existing iterations)?",
             default: true
         });
         if (_answer["confirm2cleanup"]) {
             await _cognitive.Cleanup(_PROJECT_ID);
             await _cognitive.UploadImages(_PROJECT_ID);
         }
-    } else {
-        await _cognitive.Cleanup(_PROJECT_ID);
-        await _cognitive.UploadImages(_PROJECT_ID);
     }
 
     let _answer = await inquirer.prompt({
