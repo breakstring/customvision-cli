@@ -1,0 +1,33 @@
+{
+    "name": "customvision-cli",
+    "version": "1.0.0",
+    "description": "Azure Cognitive Custom Vision tool",
+    "main": "./src/test.js",
+    "scripts": {
+        "training": "node ./src/training.js",
+        "export": "node ./src/export.js",
+        "test": "node ./src/test.js"
+    },
+    "keywords": ["Azure", "Cognitive", "Custom Vision", "TensorFlow", "CoreML", "ONNX"],
+    "author": "Kenn Zhang",
+    "license": "MIT",
+    "dependencies": {
+        "@azure/cognitiveservices-customvision-training": "^3.0.0",
+        "cli": "^1.0.1",
+        "dotenv": "^8.0.0",
+        "easy-table": "^1.1.1",
+        "inquirer": "^6.3.1",
+        "lodash": "^4.17.11",
+        "lowdb": "^1.0.0",
+        "retriable-download": "^2.1.0",
+        "slugify": "^1.3.4"
+    },
+    "devDependencies": {
+        "eslint": "^5.16.0",
+        "eslint-config-standard": "^12.0.0",
+        "eslint-plugin-import": "^2.17.3",
+        "eslint-plugin-node": "^9.1.0",
+        "eslint-plugin-promise": "^4.1.1",
+        "eslint-plugin-standard": "^4.0.0"
+    }
+}
