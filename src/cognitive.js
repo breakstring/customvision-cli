@@ -243,7 +243,6 @@ class Cognitive {
                         cli.progress(_fileFlag / _fileCount);
                     }
                 }
-                cli.progress(1);
             }
         }
     }

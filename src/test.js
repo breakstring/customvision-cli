@@ -31,7 +31,6 @@ async function AsyncFunctionWrap() {
                 if (_imagestat.isFile() && _cognitive._ImageFileExt.indexOf(_extname) >= 0) {
                     let r = await _cognitive.QuickTest(_projectid, _iterationid, _imagefullname);
                     r["filename"] = _imagename;
-                    console.info(JSON.stringify(r));
                     if (r) {
                         console.info(JSON.stringify(r, undefined, 2));
                         resultList.push(r).write();

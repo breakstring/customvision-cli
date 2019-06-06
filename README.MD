@@ -26,6 +26,8 @@ npm install
 npm run training
 ```
 
+![training](images/training.jpeg)
+
 ### Test
 
 1. Put your image files need be tested in 'quicktest' folder.
@@ -35,6 +37,8 @@ npm run training
 npm run test
 ```
 
+![training](images/test.jpeg)
+
 ### Export
 
 Run the code:
@@ -42,3 +46,5 @@ Run the code:
 ```shell
 npm run export
 ```
+
+![training](images/export.jpeg)
