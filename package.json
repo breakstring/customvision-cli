@@ -8,7 +8,14 @@
         "export": "node ./src/export.js",
         "test": "node ./src/test.js"
     },
-    "keywords": ["Azure", "Cognitive", "Custom Vision", "TensorFlow", "CoreML", "ONNX"],
+    "keywords": [
+        "Azure",
+        "Cognitive",
+        "Custom Vision",
+        "TensorFlow",
+        "CoreML",
+        "ONNX"
+    ],
     "author": "Kenn Zhang",
     "license": "MIT",
     "dependencies": {
